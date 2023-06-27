@@ -1,0 +1,64 @@
+:root {
+  --darkslate: darkslategray;
+  --headerFont: white;
+}
+
+.header {
+  display: flex;
+  background-color: var(--darkslate);
+  color: var(--headerFont);
+  display: inline;
+  position: fixed;
+  width: 100%;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 10px;
+  padding-top: 2px;
+  padding-left: 1%;
+  padding-bottom: 2px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 4%;
+}
+
+nav li {
+  display: flex;
+  font-size: large;
+  padding: 10px;
+  padding-bottom: 2px;
+} 
+
+nav li:hover {
+  background-color: lightgray;
+  color: black;
+  padding: 10px;
+  padding-bottom: 2px;
+}
+
+/* change image to be smaller, maybe mirror it? have image be on right side of page.*/
+.image {
+  width: 50%;
+}
+
+
+/* fix contact me section, wont display correctly!*/
+footer ~ li {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer {
+  display: inline;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: var(--darkslate);
+  color: var(--headerFont);
+}
+
+
+
