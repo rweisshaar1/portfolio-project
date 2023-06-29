@@ -2,9 +2,10 @@
   --darkslate: darkslategray;
   --headerFontColor: white;
   --normalTextColor: black;
+  --detailsSectionHeader: 
 }
 
-header.header {
+.header {
   display: flex;
   background-color: var(--darkslate);
   justify-content: space-between;
@@ -19,7 +20,8 @@ header.header {
   /* outline: red 1px solid; */
 }
 
-.header nav.nav {
+/*navigation stuff*/
+.header .nav {
   display: flex;
   justify-content: flex-end;
   /* outline: red 1px solid; */
@@ -55,50 +57,113 @@ a:visited {
   text-decoration: none;
 }
 
+/*main section stuff*/
 .main {
   display: flex;
+  outline: 1px solid red;
 }
 
-.main.image {
+/* .main.image {
   width: 50%;
+  outline: 1px solid red;
   flex-direction: column;
-}
+} */
 
-div.details {
+.main .details {
   display: flex;
-  flex-direction: column;
   width: 50%;
   outline: 1px solid red;
 }
 
-section.aboutMe {
+/* div.details {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  outline: 1px solid red;
+} */
+
+.aboutMeHeader {
+  display: flex;
+  padding-right: 5px;
+  font-size: 40px;
+  margin-right: 20px;
+  border-right: 3px black solid;
+  margin-bottom: auto;
+}
+
+.workHeader {
+  display: flex;
+  padding-right: 5px;
+  font-size: 40px;
+  margin-right: 20px;
+  border-right: 3px black solid;
+  margin-bottom: auto;
+}
+
+.details {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.details .aboutMe {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+  padding-top: 20px;
   font-size: large;
   color: var(--normalTextColor);
+  outline: 1px solid red;
 }
 
-.image {
+.aboutMeP {
+  font-size: large;
+}
+
+.details .work {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+  font-size: large;
+  color: var(--normalTextColor);
+  outline: 1px solid red;
+}
+
+.workP {
+  font-size: large;
+}
+
+.main.image {
   width: 100%;
+  outline: 1px solid red;
 }
 
-/* this is the footer Phone number, email, etc.*/
-section ul {
+
+/* this is the footer Phone number, email, etc. spacing*/
+li {
+  padding: 7px;
+}
+
+/*Contact footer info*/
+.contactMe .info {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  font-size: large;
   padding-left: 10px;
   padding: 5px;
+  /* outline: 1px solid red; */
 }
 
 /*this is the contact me header*/
-.contactMe h2 {
+.contactMe {
   display: flex;
+  justify-content: space-between;
   font-size: 45px;
   font-weight: bold;
   padding-top: 5px;
   padding-left: 1%;
   padding-bottom: 2px;
+  /* outline: 1px solid red; */
 }
 
 /*this is the footer main info, background, font, etc.*/
