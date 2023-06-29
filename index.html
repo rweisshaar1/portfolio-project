@@ -10,44 +10,45 @@
 <body>
   <header class="header">
     <h1>Robbie Weisshaar</h1>
-      <nav>
-        <ul>
-          <li>About Me</li>
-          <li>Work</li>
-          <li>Contact Me</li>
-          <li>Resume</li>
-        </ul>
-      </nav>
+      <section>
+        <nav class="nav">
+          <a href="#aboutMe">ABOUT ME </a><br />
+          <a href="#work"> WORK </a><br />
+          <a href="#contactMe"> CONTACT ME </a><br />
+          <a href="./resume.html"> RESUME </a><br />
+        </nav>
+      </section>  
   </header>
   
-  <main>
+  <main class="main">
     <section class="image">
       <img src="./images/studio-pic.jpg" alt="A picture of Robbie Weisshaar.">
       <figcaption>Robbie Weisshaar</figcaption>
     </section>
 
-    <section class="aboutMe">
-      <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, fugit. Quae, laudantium! Iure eum dolore inventore beatae cumque, dolor, obcaecati eaque eveniet saepe, ab earum nobis sunt labore porro nesciunt!
-        </p>
-    </section>
+    <div class="details">
+      <section id="aboutMe" class="aboutMe">
+        <h2 class="aboutMeHeader">About Me</h2>
+          <p class="aboutMeP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, fugit. Quae, laudantium! Iure eum dolore inventore beatae cumque, dolor, obcaecati eaque eveniet saepe, ab earum nobis sunt labore porro nesciunt!
+          </p>
+      </section>
 
-    <section class="work">
-      <h2>Work</h2>
-        <p></p>
-    </section>
+      <section id="work" class="work">
+        <h2 class="workHeader">Work</h2>
+          <p class="workP"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatibus laudantium iste nihil expedita corrupti quaerat officiis cumque maxime quae! Cum nesciunt hic nostrum pariatur rerum ipsum quod eligendi velit.</p>
+      </section>
+    </div>
   </main>
 
   <footer class="footer">
-    <section class="contactMe">
-      <h2>Contact Me</h2>
-        <!-- contact info here -->
-      <ul>
-        <li>Phone Number</li>
-          <p>555-555-5555</p>
-        <li>Email</li>  
-          <p>myemail@email.com</p>
-      </ul>
+    <section id="contactMe" class="contactMe">
+      <h2 class="contactMeH">Contact Me</h2>
+        <ul>
+          <li>PHONE NUMBER</li>
+            <p>555-555-5555</p>
+          <li>EMAIL</li>  
+            <p>myemail@email.com</p>
+        </ul>
     </section>
   </footer>
 

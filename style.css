@@ -1,63 +1,113 @@
 :root {
   --darkslate: darkslategray;
-  --headerFont: white;
+  --headerFontColor: white;
+  --normalTextColor: black;
 }
 
-.header {
+header.header {
   display: flex;
   background-color: var(--darkslate);
-  color: var(--headerFont);
-  display: inline;
+  justify-content: space-between;
+  color: var(--headerFontColor);
   position: fixed;
   width: 100%;
   font-size: 60px;
   font-weight: bold;
+  padding-top: 5px;
+  padding-left: 1%;
+  padding-bottom: 2px;
+  /* outline: red 1px solid; */
+}
+
+.header nav.nav {
+  display: flex;
+  justify-content: flex-end;
+  /* outline: red 1px solid; */
+  flex-direction: row;
+  color: var(--headerFontColor);
+  padding-top: 5px;
+  margin-top: 20px;
+  margin-right: 30px;
+  font-size: large;
+} 
+
+.nav a {
   padding: 10px;
-  padding-top: 2px;
+  border-bottom: 2px var(--darkslate) solid;
+  border-right: 2px var(--darkslate) solid;
+  text-decoration: none;
+}
+
+a:link {
+  color: var(--headerFontColor);
+}
+
+a:visited {
+  color: var(--headerFontColor);
+}
+
+.nav a:hover {
+  background-color: dimgray;
+  color: var(--headerFontColor);
+  border-bottom: 2px black solid;
+  border-right: 2px black solid;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+}
+
+.main.image {
+  width: 50%;
+  flex-direction: column;
+}
+
+div.details {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  outline: 1px solid red;
+}
+
+section.aboutMe {
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  color: var(--normalTextColor);
+}
+
+.image {
+  width: 100%;
+}
+
+/* this is the footer Phone number, email, etc.*/
+section ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-left: 10px;
+  padding: 5px;
+}
+
+/*this is the contact me header*/
+.contactMe h2 {
+  display: flex;
+  font-size: 45px;
+  font-weight: bold;
+  padding-top: 5px;
   padding-left: 1%;
   padding-bottom: 2px;
 }
 
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin-right: 4%;
-}
-
-nav li {
-  display: flex;
-  font-size: large;
-  padding: 10px;
-  padding-bottom: 2px;
-} 
-
-nav li:hover {
-  background-color: lightgray;
-  color: black;
-  padding: 10px;
-  padding-bottom: 2px;
-}
-
-/* change image to be smaller, maybe mirror it? have image be on right side of page.*/
-.image {
-  width: 50%;
-}
-
-
-/* fix contact me section, wont display correctly!*/
-footer ~ li {
-  display: flex;
-  flex-direction: row;
-}
-
+/*this is the footer main info, background, font, etc.*/
 .footer {
-  display: inline;
   position: fixed;
   width: 100%;
   bottom: 0;
   background-color: var(--darkslate);
-  color: var(--headerFont);
+  color: var(--headerFontColor);
 }
 
 
