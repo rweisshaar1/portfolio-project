@@ -1,8 +1,23 @@
+* {
+  font-family: Georgia, serif, sans-serif, Verdana;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: medium;
+}
+
 :root {
   --darkslate: darkslategray;
   --headerFontColor: white;
   --normalTextColor: black;
-  --detailsSectionHeader: 
+}
+
+/* all headers CSS*/
+
+h4 {
+  margin-top: 100px;
+  font-size: 60px;
 }
 
 .header {
@@ -57,63 +72,43 @@ a:visited {
   text-decoration: none;
 }
 
+figcaption {
+  margin-left: 20px;
+  font-family: sans-serif;
+  font-size: large;
+}
+
 /*main section stuff*/
 .main {
   display: flex;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
-
-/* .main.image {
-  width: 50%;
-  outline: 1px solid red;
-  flex-direction: column;
-} */
 
 .main .details {
-  display: flex;
-  width: 50%;
-  outline: 1px solid red;
+  padding: 30px;
 }
 
-/* div.details {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  outline: 1px solid red;
-} */
-
 .aboutMeHeader {
-  display: flex;
-  padding-right: 5px;
+  /* display: flex; */
   font-size: 40px;
   margin-right: 20px;
-  border-right: 3px darkslategray solid;
-  margin-bottom: auto;
+  margin-bottom: 20px;
+  /* outline: red 3px solid; */
 }
 
 .workHeader {
-  display: flex;
-  padding-right: 5px;
   font-size: 40px;
   margin-right: 20px;
-  border-right:3px darkslategray solid;
-}
-
-.details {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  margin-bottom: 20px;
 }
 
 .details .aboutMe {
-  display: flex;
-  flex-direction: row;
   margin-top: 10%;
   margin-bottom: auto;
   padding-top: 20px;
   font-size: large;
   color: var(--normalTextColor);
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .aboutMeP {
@@ -121,60 +116,65 @@ a:visited {
 }
 
 .details .work {
-  display: flex;
-  flex-direction: row;
   margin-top: 10%;
-  flex-wrap: wrap;  
   color: var(--normalTextColor);
   /* outline: 1px solid red; */
 }
 
 .details .work img {
-  display: flex;
-  width: 100%;
-  outline: 1px solid red;
-}
-
-.details .work .instagram {
-  display: flex;
-  width: 50%;
-  margin-bottom: 100px;
-}
-
-.details .work .hero-image {
-  display: flex;
-  width: 50%;
-  margin-bottom: 100px;
-}
-
-@media screen and (max-width: 768px){
-  main section img {flex-shrink: 1; width: 10%;}
-  h2 {font-size: medium;}
-  p {font-size: small;}
-  .header {padding: auto; margin: auto; flex-wrap: wrap;}
-  .nav {padding: auto; margin: auto; flex-wrap: wrap;}
-  .details {flex-shrink: 1; flex-direction: column;}
-  /* .image {flex-shrink: 1;} */
-  img {flex-shrink: 1; width: auto;}
-}
-
-@media screen and (max-width: 600px){
-  .main.image {flex-shrink: 2; width: 25%;}
-  h2 {font-size: medium;}
-  p {font-size: small;}
-  .header {padding: auto; margin: auto; flex-wrap: wrap;}
-  .nav {padding: auto; margin: auto; flex-wrap: wrap;}
-  .details {flex-shrink: 2; flex-direction: column;}
-  /* .image {flex-shrink: 2;} */
-  img {flex-shrink: 2; width: auto;}
-}
-
-.main.image {
-  width: 100%;
+  background-color: antiquewhite;
   /* outline: 1px solid red; */
 }
 
+div.work-images {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
+div.work-images a.facebook img {
+  flex: 8 0 100%;
+  /* outline: 5px solid green; */
+}
+
+div.work-images a.instagram {
+  flex: 2 1 -1;
+  /* outline: 5px solid green; */
+}
+
+div.work-images a.hero-image {
+  flex: 2 1 -1;
+  /* outline: 5px solid green; */
+}
+
+.work img:hover {
+  opacity: .5;
+}
+
+@media screen and (max-width: 768px){
+  .main {flex-direction: column; flex-wrap: wrap; flex-shrink: 1;}
+  h2 {font-size: medium;}
+  p {font-size: small;}
+  .header {padding: auto; margin: auto; flex-wrap: wrap;}
+  .nav {padding: auto; margin: auto; flex-wrap: wrap;}
+  .details {flex-shrink: 1; flex-wrap: wrap;}
+  a img {flex-shrink: 1; width: auto;}
+}
+
+@media screen and (max-width: 600px){
+  .main {flex-direction: column; flex-wrap: wrap; flex-shrink: 1;}
+  h2 {font-size: medium;}
+  p {font-size: small;}
+  .header {padding: auto; margin: auto; flex-wrap: wrap;}
+  .nav {padding: auto; margin: auto; flex-wrap: wrap;}
+  .details {flex-shrink: 2; flex-wrap: wrap;}
+  /* .image {flex-shrink: 2;} */
+  a img {flex-shrink: 2; width: auto;}
+}
+
+.image {
+  margin-bottom: 100px;
+}
 
 /* this is the footer Phone number, email, etc. spacing*/
 li {
