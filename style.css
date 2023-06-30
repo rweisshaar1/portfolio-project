@@ -138,12 +138,12 @@ div.work-images a.facebook img {
 }
 
 div.work-images a.instagram {
-  flex: 2 1 -1;
+  flex: 2 1 50%;
   /* outline: 5px solid green; */
 }
 
 div.work-images a.hero-image {
-  flex: 2 1 -1;
+  flex: 2 1 50%;
   /* outline: 5px solid green; */
 }
 
@@ -159,7 +159,7 @@ div.work-images a.hero-image {
   .nav {padding: auto; margin: auto; flex-wrap: wrap;}
   .details {flex-shrink: 1; flex-wrap: wrap;}
   .details .work {margin-top: auto;}
-  a img {flex-shrink: 1; width: auto;}
+  a img {flex-shrink: 5; width: auto;}
 }
 
 @media screen and (max-width: 600px){
@@ -170,7 +170,7 @@ div.work-images a.hero-image {
   .nav {padding: auto; margin: auto; flex-wrap: wrap;}
   .details {flex-shrink: 6; flex-wrap: wrap;}
   /* .image {flex-shrink: 2;} */
-  a img {flex-shrink: 2; width: auto;}
+  a img {flex-shrink: 6; width: auto;}
   .image {margin-bottom: auto;}
 }
 
