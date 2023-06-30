@@ -162,7 +162,7 @@ div.work-images a.hero-image {
   a img {flex-shrink: 5; width: auto;}
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 800px){
   .main {flex-direction: column; flex-wrap: wrap; flex-shrink: 1;}
   h2 {font-size: medium;}
   p {font-size: small;}
