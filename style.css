@@ -103,7 +103,7 @@ figcaption {
 }
 
 .details .aboutMe {
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: auto;
   padding-top: 20px;
   font-size: large;
@@ -149,6 +149,17 @@ div.work-images a.hero-image {
 
 .work img:hover {
   opacity: .5;
+}
+
+@media screen and (max-width: 2560px){
+  .main {flex-shrink: 1;}
+  h2 {font-size: medium;}
+  p {font-size: small;}
+  .header {padding: auto; margin: auto; flex-wrap: wrap;}
+  .nav {padding: auto; margin: auto; flex-wrap: wrap;}
+  .details {flex-shrink: 1; flex-wrap: wrap;}
+  .details .work {margin-top: 50px;}
+  a img {flex-shrink: 5; width: auto;}
 }
 
 @media screen and (max-width: 768px){
